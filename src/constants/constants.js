@@ -13,6 +13,7 @@ import noImageProfileMobileRetina from '../assets/images/defaultPet-240_retina.p
 import fallbackImage from '../assets/icons/paw.svg';
 
 export const constants = {
+  // API_BASE_URL: 'https://pet-ly-project-back.vercel.app/api',
   API_BASE_URL: 'https://muddy-tick-housecoat.cyclic.app/api',
   // API_BASE_URL: 'https://petly-project-goit.herokuapp.com/api',
   // API_BASE_URL: 'http://localhost:3001/api',

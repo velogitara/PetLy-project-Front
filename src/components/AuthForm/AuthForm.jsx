@@ -115,7 +115,20 @@ const AuthForm = ({ url }) => {
         } catch (error) {}
       }}
     >
-      {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        dirty,
+        isValid,
+        validateOnChange,
+        isSubmitting,
+        isInitialValid,
+        validateOnBlur,
+      }) => (
         <StyledForm onSubmit={handleSubmit}>
           {url === '/login' && (
             <>
@@ -240,14 +253,16 @@ const AuthForm = ({ url }) => {
                 </ErrorMessage>
                 <div>{matchError}</div>
               </InputWrapper>
-              <Button
-                type="button"
-                styled="formAuth back"
-                title="Next"
-                onClick={() => {
-                  checkFields(values);
-                }}
-              />
+              {validateOnBlur && (
+                <Button
+                  type="button"
+                  styled="formAuth back"
+                  title="Next"
+                  onClick={() => {
+                    checkFields(values);
+                  }}
+                />
+              )}
             </>
           )}
           {url === '/register' && part === 2 && (
