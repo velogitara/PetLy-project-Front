@@ -16,7 +16,9 @@ export const constants = {
   API_BASE_URL: 'https://pet-ly-project-back.vercel.app/api',
   // API_BASE_URL: 'https://muddy-tick-housecoat.cyclic.app/api',
   // API_BASE_URL: 'https://petly-project-goit.herokuapp.com/api',
+  // API_BASE_URL: 'https://pet-ly-project-back-m2pu-pvyvui958-velogitaras-projects.vercel.app/api',
   // API_BASE_URL: 'http://localhost:3001/api',
+  // API_BASE_URL: 'https://pet-ly-backend.netlify.app/api',
 
   icons,
   fallbackImage,
